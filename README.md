@@ -1,5 +1,7 @@
 # Blog_EJS
-This is a project for practicing what my skill for developing websites using node, express and ejs. In this case the website is a blog. This project is based on a challenge of a web development course: https://www.udemy.com/course/the-complete-web-development-bootcamp/
+The primary goal of this project is simply practicing my back-end skills using node, express and ejs initially. In this case, the website I am developing is a blog, and the project is based on a challenge from the following web development course: https://www.udemy.com/course/the-complete-web-development-bootcamp/
+
+Later on, I will probably expand this project to practice my skills with databases too.
 
 ## Desired Features
 1. Post Creation: Users should be able to create new posts.
