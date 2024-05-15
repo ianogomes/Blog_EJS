@@ -1,8 +1,9 @@
 {
   "name": "26-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "The primary goal of this project is simply practicing my back-end skills using node, express and ejs initially. In this case, the website I am developing is a blog, and the project is based on a challenge from the following web development course: https://www.udemy.com/course/the-complete-web-development-bootcamp/",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
     "express": "^4.19.2"
   }
 }

@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<section class="cover">
+    <div class="container">
+        <div class="hero">
+            <div id="text">
+                <h1>Posts</h1>
+                <ol id="links">
+                    <% for (const key of Object.keys(list)){ %> 
+                        <% var link = "/" + key; %>
+                        <li>
+                            <a class="nav-link" href= <%= link %>><%= list[key][0] %></a> <%# actual output %> 
+                        </li>
+                    <% } %>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include("partials/footer.ejs") %>
