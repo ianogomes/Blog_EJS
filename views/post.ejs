@@ -12,13 +12,14 @@
 </section>
 
 <% var link = "/delete" + key; %>
+<% var link_update = "/create" + key; %>
 
 <section class="contact">
     <div class="container">
         <nav>
             <label class="logo"></label>
             <ul>
-                <li><a href="#">Update</a></li>
+                <li><a href=<%= link_update %>>Update</a></li>
                 <li><a href= <%= link %>>Delete</a>
                     <!-- <form action="/delete" method="POST">
                     <input type="submit" value="Delete">
@@ -26,7 +27,7 @@
                 </li>
             </ul>
             <ol>
-                <li><a href="#">Update</a></li>
+                <li><a href=<%= link_update %>>Update</a></li>
                 <li><a href= <%= link %>>Delete</a></li>
             </ol>
         </nav>

@@ -1,1 +1,14 @@
-<h1>Hello World!</h1>
+<h1>Writing Area</h1>
+
+<% var link = "/submit" + key; %>
+
+<form action=<%= link %> method="POST">
+    <label for="title">Title: </label>
+    <input type="text" name="title" required value= <%= title %>><br><br>
+
+    <label for="text"></label>
+    <textarea id="text" name="text" rows="20" cols="60" placeholder="Type your text here."><%= text %></textarea>
+    
+    <br><br>
+    <input type="submit" value="Save">
+</form>
