@@ -4,15 +4,15 @@
     <div class="container">
         <div class="aboutme">
             <div id="aboutme">
-                <div><h1 id="one"><%= list[key][0] %></h1></div>
-                <div><p><%= list[key][1] %></p></div>
+                <div><h1 id="one"><%= post.title %></h1></div>
+                <div><p><%= post.text %></p></div>
             </div>
         </div>
     </div>
 </section>
 
-<% var link = "/delete" + key; %>
-<% var link_update = "/create" + key; %>
+<% var link = "/delete/" + key; %>
+<% var link_update = "/create/" + key; %>
 
 <section class="contact">
     <div class="container">

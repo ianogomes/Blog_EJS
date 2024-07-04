@@ -1,6 +1,42 @@
-<h1>Writing Area</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<% var link = "/submit" + key; %>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Blog</title>
+  <link rel="stylesheet" href="/styles/writing.css">
+</head>
+
+<body>
+    <div class="container">
+      <h1>
+        Writing Area
+      </h1>
+
+      <% var link = "/submit/" + key; %>
+
+      <form action=<%= link %> method="POST">
+        <label for="title">Title: </label>
+        <input type="text" name="title" required value= "<%= title %>"><br><br>
+    
+        <label for="text"></label>
+        <textarea id="text" name="text" rows="20" cols="60" placeholder="Type your text here."><%= text %></textarea>
+        
+        <button class="full-width" type="submit">
+            Save
+        </button>
+      </form>
+
+    </div>
+</body>
+
+</html>
+
+
+<!-- <h1>Writing Area</h1>
+
+
 
 <form action=<%= link %> method="POST">
     <label for="title">Title: </label>
@@ -9,6 +45,7 @@
     <label for="text"></label>
     <textarea id="text" name="text" rows="20" cols="60" placeholder="Type your text here."><%= text %></textarea>
     
-    <br><br>
-    <input type="submit" value="Save">
-</form>
+    <button class="full-width" type="submit">
+        Save
+    </button>
+</form> -->

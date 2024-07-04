@@ -6,10 +6,10 @@
             <div id="text">
                 <h1>Posts</h1>
                 <ol id="links">
-                    <% for (const key of Object.keys(list)){ %> 
-                        <% var link = "/" + key; %>
+                    <% for (let post of list){ %> 
+                        <% var link = "/" + post.id; %>
                         <li>
-                            <a class="nav-link" href= <%= link %>><%= list[key][0] %></a> <%# actual output %> 
+                            <a class="nav-link" href= <%= link %>><%= post.title %></a> <%# actual output %> 
                         </li>
                     <% } %>
                 </ol>
